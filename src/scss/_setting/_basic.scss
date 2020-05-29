@@ -1,0 +1,66 @@
+*,*::before,
+*,*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.125;
+  color: #fff;
+  background-color: #000;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+
+  @include tablets {
+    font-size: 14px;
+  }
+
+  @include phones {
+    font-size: 13px;
+  }
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1210px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
